@@ -1,6 +1,5 @@
-package br.edu.uepb.example.secondmicroservice.dtos;
+package br.edu.uepb.example.secondmicroservice.models;
 
-import br.edu.uepb.example.secondmicroservice.enums.EmailStatus;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,12 +7,11 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class EmailDTO {
-	
+public class EmailModel {
+
+	private Long id;
 	private String emailFrom;
     private String emailTo;
     private String subject;
     private String text;
-    
-    private EmailStatus status;
 }
