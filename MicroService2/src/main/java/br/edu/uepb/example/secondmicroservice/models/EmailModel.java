@@ -1,5 +1,6 @@
 package br.edu.uepb.example.secondmicroservice.models;
 
+import br.edu.uepb.example.secondmicroservice.enums.EmailStatus;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,4 +15,5 @@ public class EmailModel {
     private String emailTo;
     private String subject;
     private String text;
+    private EmailStatus emailStatus;
 }
