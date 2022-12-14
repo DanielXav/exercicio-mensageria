@@ -28,7 +28,7 @@ public class HelloController {
     @GetMapping
     public String getMessage() {
         try {
-            EmailDTO emailDTO = new EmailDTO("ramon.bezerra@servidor.uepb.edu.br", "Test from RabbitMQ", "Hello World");
+            EmailDTO emailDTO = new EmailDTO("daniel.araujo@aluno.uepb.edu.br", "Test from RabbitMQ", "Hello World");
             String json = new ObjectMapper().writeValueAsString(emailDTO);
             Message message = MessageBuilder.withBody(json.getBytes())
                     .setContentType(MessageProperties.CONTENT_TYPE_JSON)

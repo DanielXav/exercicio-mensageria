@@ -1,6 +1,5 @@
-package br.edu.uepb.example.secondmicroservice.dtos;
+package br.edu.uepb.example.secondmicroservice.dto;
 
-import br.edu.uepb.example.secondmicroservice.enums.EmailStatus;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,11 +8,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class EmailDTO {
-	
-	private String emailFrom;
     private String emailTo;
     private String subject;
     private String text;
-    
-    private EmailStatus status;
 }
