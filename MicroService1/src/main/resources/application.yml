@@ -2,11 +2,8 @@ spring:
     application:
         name: first-service
     rabbitmq:
-        host: localhost
-        port: 5672
-        username: guest
-        password: guest
-        exchange: Greetings    
+        addresses: amqps://mpnwjjxb:RSP9zx_XcnvUd9WIk8_QUgvxeUxVu6JS@toad.rmq.cloudamqp.com/mpnwjjxb
+        exchange: Greetings  
 server:
     port: 
         8081
